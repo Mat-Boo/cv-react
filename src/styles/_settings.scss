@@ -1,0 +1,38 @@
+$navBg: #2a1d52;
+$navFont: rgb(49, 177, 215);
+$navFontHover: #4FEDD2;
+$mainBg: rgb(104, 125, 250);
+$mainFont: rgb(56, 188, 247);
+$h2: rgb(99, 164, 233);
+$h1: #36D0EA;
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Josefin+Sans:wght@100&family=Nova+Round&display=swap');
+
+$font-1: 'Nova Round', cursive;
+$font-2: 'Dosis', sans-serif;
+$font-3: 'Josefin Sans', serif;
+
+$color-2: #6C77F4;
+$white: #ddd;
+$black: #333;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  font-family: $font-3;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1290px) {
+  .App {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+}
+

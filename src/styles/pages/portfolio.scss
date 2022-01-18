@@ -1,0 +1,124 @@
+.portfolio {
+    width: 1000px;
+    .portfolioLanguages {
+        background: $navBg;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        color: $navFont;
+        font-family: $font-1;
+        padding: 16px;
+        border-radius: 20px;
+        .language{
+            &:hover {
+                color: $navFontHover;
+            }
+            input {
+                margin-right: 10px;
+            }
+        }
+    }
+    .portfolioProjects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style: none;
+        .cardProject {
+            border-radius: 20px;
+            background: $mainBg;
+            width: 30%;
+            margin: 10px 0 10px 0;
+            padding: 15px 5px 15px 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            .languagesIcon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                .languageIcon {
+                    width: 16px;
+                    margin: 0 5px 0 5px;
+                }
+            }
+            h4{
+                font-size: 1.1em;
+                font-family: $font-1;
+                align-self: flex-start;
+            }
+            .projectPicture {
+                width: 100%;
+                height: 70%;
+                border-radius: 5px;
+            }
+            .plus-circle{
+                color: $navFontHover;
+            }
+            .details {
+                position: fixed;
+                background: $navBg;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                width: 500px;
+                padding: 30px;
+                box-shadow: 5px 5px 10px rgb(97, 96, 96);
+                top: 20%;
+                left: 50%;
+                transform: translateX(-50%);
+                .lineUp {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: flex-end;
+                    margin-bottom: 30px;
+                    width: 100%;
+                    .detailTitle {
+                        color: $navFont;
+                        font-family: $font-1;
+                        font-size: 1.2em;
+                    }
+                    .source {
+                        background: $navFont;
+                        padding: 15px;
+                        border-radius: 20px;
+                        color: $navBg;
+                        text-decoration: none;
+                        font-family: $font-1;
+                        font-size: 0.9em;
+                        &:hover {
+                            background: $navFontHover;
+                        }
+                    }
+                }
+                .description {
+                    color: $navFont;
+                    font-family: $font-1;
+                    font-size: 0.8em;
+                    margin-bottom: 30px;
+                }
+                .backPage {
+                    background: $navFont;
+                    padding: 15px;
+                    border-radius: 20px;
+                    color: $navBg;
+                    text-decoration: none;
+                    font-family: $font-1;
+                    font-size: 0.9em;
+                    &:hover {
+                        background: $navFontHover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1290px) {
+    .portfolio {
+        width: 100%;
+    }
+}

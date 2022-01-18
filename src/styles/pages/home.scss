@@ -1,0 +1,58 @@
+.home {
+    background: $navBg;
+    border-radius: 20px;
+    width: 740px;
+    padding: 130px;
+    .nameJob {
+        h1 {
+            font-size: 4.5em;
+            color: $h1;
+            text-shadow: 5px 5px 5px $black;
+        }
+        
+        h2 {
+            font-size: 2.5em;
+            color: $h2;
+            margin-top: 15px;
+            text-shadow: 5px 5px 5px $black;
+        }
+    }
+    .cvBtn {
+        margin-top: 100px;
+        background-color: $h2;
+        border-radius: 30px;
+        padding: 10px;
+        font-size: 1.3em;
+        width: 180px;
+        text-align: center;
+        color: $black;
+        font-weight: bold;
+        &:hover {
+            background: $navFontHover;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1290px) {
+    .home {
+        width: 100%;
+        .nameJob {
+            h1 {
+                font-size: 4vw;
+    
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .home {
+        h1 {
+            font-size: 1.6em;
+        }
+    }
+}
+

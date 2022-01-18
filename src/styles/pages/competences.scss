@@ -1,0 +1,257 @@
+.competences {
+    border-radius: 20px;
+    width: 1000px;
+    h4 {
+        color: $mainFont;
+        font-size: 1.1em;
+        font-family: $font-1;
+    }
+    
+    .lineUp, .lineDown {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .bloc {
+        
+        border-radius: 20px;
+        background: $mainBg;
+        padding: 22px;
+    }
+    .lineUp {
+        margin-bottom: 10px;
+        .leftBloc {
+            margin-right: 10px;
+            width: 35%;
+            .languagesBloc {
+                .expYears {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 5px 0 5px 0;
+                    span {
+                        color: white;
+                        font-size: 0.8em;
+                        position: relative;
+                        .verticalLine {
+                            height: 150px;
+                            width: 1px;
+                            background: white;
+                            position: absolute;
+                            top: 15px;
+                            left: 12px;
+                            z-index: 0;
+                        }
+                    }
+                }
+                .languages {
+                    .itemProgress {
+                        margin-bottom: 5px;
+                        display: flex;
+                        flex-direction: column;
+                        span {
+                            color: black;
+                            font-size: 1.1em;
+                            font-weight: bold;
+                        }
+                        .progress {
+                            height: 5px;
+                            background: $mainFont;
+                            margin: 5px 0 5px 0;
+                            z-index: 1;
+                        }
+                        .progress85 {
+                            animation: 2s linear progressBarAnim85;
+                            animation-fill-mode:both;
+                        }
+                        .progress100 {
+                            animation: 2s linear progressBarAnim100;
+                            animation-fill-mode:both;
+                        }
+                        .progress40 {
+                            animation: 2s linear progressBarAnim40;
+                            animation-fill-mode:both;
+                        }
+                        .progress25 {
+                            animation: 2s linear progressBarAnim25;
+                            animation-fill-mode:both;
+                        }
+                    }
+                }
+            }
+            .frameworksBloc {
+                margin-top: 50px;
+                .expYears {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 5px 0 5px 0;
+                    span {
+                        color: white;
+                        font-size: 0.8em;
+                        position: relative;
+                        .verticalLine {
+                            height: 150px;
+                            width: 1px;
+                            background: white;
+                            position: absolute;
+                            top: 15px;
+                            left: 12px;
+                            z-index: 0;
+                        }
+                    }
+                }
+                .frameworks {
+                    .itemProgress {
+                        margin-bottom: 5px;
+                        display: flex;
+                        flex-direction: column;
+                        span {
+                            color: black;
+                            font-size: 1.1em;
+                            font-weight: bold;
+                        }
+                        .progress {
+                            height: 5px;
+                            background: $mainFont;
+                            margin: 5px 0 5px 0;
+                            z-index: 1;
+                        }
+                        .progress100 {
+                            animation: 2s linear progressBarAnim100;
+                            animation-fill-mode:both;
+                        }
+                        .progress75 {
+                            animation: 2s linear progressBarAnim75;
+                            animation-fill-mode:both;
+                        }
+                        .progress25 {
+                            animation: 2s linear progressBarAnim25;
+                            animation-fill-mode:both;
+                        }
+                    }
+                }
+            }
+        }
+        .rightBloc {
+            width: 65%;
+            h5 {
+                margin: 20px 0 10px 0;
+                color: $mainFont;
+                font-size: 1em;
+                font-family: $font-1;
+            }
+            span {
+                font-size: 0.8em;
+                color: $mainFont;
+                font-weight: bold;
+            }
+            p {
+                margin-top: 5px;
+                color: black;
+                font-family: $font-1;
+                font-size: 0.9em;
+            }
+            .firstExp {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .lineDown {
+        .leftBloc {
+            margin-right: 10px;
+            width: 70%;
+            .listesAutresCompetences {
+                margin: 20px 0 0 50px;
+                display: flex;
+                .leftList, .rightList {
+                    list-style: none;
+                }
+                .leftList {
+                    margin-right: 150px;
+                }
+                li {
+                    margin-bottom: 15px;
+                    display: flex;
+                    align-items: center;
+                    color: black;
+                    font-family: $font-1;
+                    font-size: 0.9em;
+                    svg {
+                        color: $mainFont;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .rightBloc {
+            width: 30%;
+            .interets {
+                list-style: none;
+                margin-top: 20px;
+                li {
+                    margin-bottom: 15px;
+                    display: flex;
+                    align-items: center;
+                    color: black;
+                    font-family: $font-1;
+                    font-size: 0.8em;
+                    svg {
+                        color: $mainFont;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes progressBarAnim100 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes progressBarAnim85 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes progressBarAnim75 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes progressBarAnim40 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 40%;
+    }
+}
+
+@keyframes progressBarAnim25 {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1290px) {
+    .competences {
+        width: 100%;
+
+    }
+}

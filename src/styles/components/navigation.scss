@@ -1,0 +1,138 @@
+.nav {
+    color: $navFont;
+    background: $navBg;
+    border-radius: 20px;
+    height: 675px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 10px 0 0;
+    .pictureTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .profile_picture {
+            border: solid 5px $mainFont;
+            border-radius: 50%;
+        }
+        h3 {
+            font-size: 1.2em;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    }
+    .navList {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        .nav_item {
+            margin-bottom: 40px;
+            font-weight: bold;
+            font-size: 1.2em;
+            a {
+                text-decoration: none;
+                color: $navFont;
+                &:hover {
+                    color: $navFontHover;
+                }
+                &:visited {
+                    color: $navFont;
+                    text-decoration: none;
+                }
+                .navItemLogo {
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+    .social {
+        display: flex;
+        justify-content: space-between;
+        a {
+            text-decoration: none;
+            margin: 5px;
+            &:visited {
+                color: $navFont;
+                text-decoration: none;
+            }
+            .socialItem {
+                border-radius: 50%;
+                &:hover {
+                    color: $navFontHover;
+                }
+            }
+        }
+    }
+    .spanMatBoo {
+        align-self: center;
+        font-size: 1.1em;
+    }
+}
+
+
+@media screen and (max-width: 1290px) {
+    .nav {
+        flex-direction: row;
+        height: 10px;
+        width: 100%;
+        margin: 0 0 10px 0;
+        box-sizing: border-box;
+        .pictureTitle {
+            flex-direction: row;
+            align-items: center;
+            .profile_picture {
+                border: solid 1px $mainFont;
+                width: 30px;
+            }
+            h3 {
+                font-size: 0.7em;
+                margin: 0 0 0 10px;
+                font-weight: bold;
+            }
+        }
+        .navList {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            .nav_item {
+                margin: 0 20px 0 0;
+                font-weight: bold;
+                font-size: 0.8em;
+                text-align: center;
+                a {
+                    &:hover {
+                        color: $navFontHover;
+                    }
+                    &:visited {
+                        color: $navFont;
+                        text-decoration: none;
+                    }
+                    .navItemLogo {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        .social {
+            display: none;
+        }
+        .spanMatBoo {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .nav {
+        width: 100%;
+        .pictureTitle {
+            display: none;
+        }
+        .navList {
+            width: 100%;
+        }
+    }
+}
